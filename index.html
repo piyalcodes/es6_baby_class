@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="class.js"></script>
+
+
+</head>
+<body> 
+
+<script>
+
+let bubble1;
+
+
+function setup() {
+	 
+	for(var letter=65;letter<91;letter++)
+	{
+
+		var _char = String.fromCharCode(letter);
+		//console.log(_char);
+		
+		bubble = new fly({color:'red', chr: _char}); 
+		bubble.upper;
+		bubble.createFlyer();
+		bubble.fly();
+	}	
+}
+
+setup();
+ 
+</script>
+</body>
+
+</html>
